@@ -1,0 +1,197 @@
+body {
+	margin:0px; 
+	padding:0px; 
+	border:0px;
+	font-size: 16px;
+	
+}
+
+
+
+#particles-js{ /* De esta manera se llama la etiqueta id*/
+	
+	background: url(../image/33870hd.jpg); /*Fondo para las particulas - se usa url y se llama desde carpeta img usando ".." para devolverse*/
+	background-position: center; /*centra la img*/
+	background-attachment: contain; /*Se define dentro de las proporciones*/
+	background-size: cover; /*toma el mismo tamaño del contenedor*/
+	
+	padding-top: 0cm;
+	height: 800px;
+	align-content: center;
+	align-items: center;
+
+}
+
+
+/*.base img{*/
+
+	
+	/*position: absolute; hace que no se siga el orden en la pág*/
+	/*width: 550px;
+	top: 50px;
+	left: 300px;
+	border-top: white 10px double;
+	border-right: white 10px double;
+	border-bottom: white 10px double;
+	border-left: white 10px double; 
+	/*opacity: 0.8; */
+/*}*/
+
+
+.ancho-letras{ /*Estilos para la clase ancho-letras */
+	width: 550px;
+	left: 10px;
+	top: 50px;
+	position: absolute; /*Sirve para no hacerle caso al orden establecido a las cajas*/
+	/*background: rgba(0,0,0,.8); Funciona para ver las cajas y guiarse - estado: comentado*/
+		
+}
+
+
+
+
+
+.letras-slider h1{ /*Nomenclatura para modificar solo lo que hay dentro de h1*/
+	color: #fff; /*Color predeterminado*/
+	font-family: shaw; /*Fuente instalada previamente*/
+	-webkit-transform: rotate(-40deg); /* herramienta para rotar la letra*/
+	transform: rotate(-40deg); /*x2*/
+	font-size: 7em;
+	
+
+}
+
+
+.segundo {
+	width: 200px;
+    position: absolute;
+    left: 200px;
+    top:300px;
+	-webkit-transform: rotate(-40deg); /* herramienta para rotar la letra*/
+	transform: rotate(-40deg); /*x2*/
+}
+
+.segundo  h2{
+	
+	font-family: shaw;
+	background-color:  #190714;
+	text-decoration: none;
+	color: #f2f2f2;
+	border: 4px solid #f2f2f2;
+	text-align: center;
+	border-radius: 10px;
+	transition: background .5s, color .5s;
+	
+	font-size:2em;
+
+
+
+}
+h2:hover{
+	background: #f2f2f2;
+	color: #048981;
+}
+
+
+
+
+#clock {
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    border: 4px solid #f2f2f2;
+    border-radius: 10px;
+    height: 550px;
+    margin: 7px auto;
+    position: absolute;
+    width: 550px;
+    left: 600px;
+    top: 100px;
+
+
+}
+
+#clock .overlay {
+    background-image: url('.png');
+    background-size: 100% 100%;
+    border-radius: 100%;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1005;
+
+
+}
+
+#clock .background {
+    background-color: #fefefe;
+    background-image: url('../image/base.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    
+    height: 100%;
+    position: absolute;
+    width: 100%;
+
+}
+
+#clock .axis {
+    background-color: black;
+    border-radius: 100%;
+    height: 22px;
+    left: calc(50% - 4.5px);
+    position: absolute;
+    top: calc(50% - 10.5px);
+    width: 22px;
+    z-index: 1004;
+}
+
+#clock .hand {
+    border-radius: 50px;
+    bottom: 0;
+    box-shadow: 2px 2px 1px rgba(0,0,0,.2);
+    position: absolute;
+    transform-origin: bottom;
+}
+
+#clock .hour {
+    height: 50%;
+    left: 50%;
+    position: absolute;
+    width: 50%;
+    
+}
+
+#clock .minute {
+    height: 50%;
+    left: 50%;
+    position: absolute;
+    width: 50%;
+    z-index: 1002;
+}
+
+#clock .second {
+    height: 50%;
+    left: 51%;
+    position: absolute;
+    width: 50%;
+    z-index: 1003;
+}
+
+#clock .hour .hand {
+    background-color: black;
+    height: 70%;
+    width: 17px;
+    z-index: 1001;
+}
+
+#clock .minute .hand {
+    background-color: #222;
+    height: 85%;
+    width: 14px;
+}
+
+#clock .second .hand {
+    background-color: red;
+    height: 97%;
+    width: 5px;
+} 
